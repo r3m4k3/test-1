@@ -9,15 +9,13 @@
 >
     <php>
         <ini name="error_reporting" value="-1" />
-        <server name="KERNEL_CLASS" value="app/" />
+        <server name="KERNEL_CLASS" value="AppKernel" />
+        <server name="KERNEL_DIR" value="app/" />
     </php>
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>../vendor/vendorname/vendor-catalog-bundle/Acme/DemoCatalogBundle/Tests/Entity</directory>
-            <directory>../src/*/*Bundle/Tests</directory>
-            <directory>../src/*/Bundle/*Bundle/Tests</directory>
-            <directory>../vendor/vendorname/acme-validator-bundle/Acme/DemoBundle/Tests</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 
